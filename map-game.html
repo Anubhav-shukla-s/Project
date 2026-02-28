@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map Quiz Options - PopScope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+
+  <main class="shell">
+    <nav class="topbar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>PopScope</span>
+      </div>
+      <button class="ghost-btn" id="back-home-btn">Back Home</button>
+    </nav>
+
+    <section class="game-section" id="game-section">
+      <div class="section-head">
+        <h2>Select A Quiz</h2>
+        <p>7 Modes</p>
+      </div>
+      <p class="status-text">Choose one mode. Each opens in a new page.</p>
+
+      <div class="quiz-options">
+        <a class="quiz-option-card" href="quiz-game.html?scope=world" target="_blank" rel="noopener noreferrer">
+          <h3>World Quiz</h3>
+          <p>All independent countries on map.</p>
+        </a>
+        <a class="quiz-option-card" href="quiz-game.html?scope=africa" target="_blank" rel="noopener noreferrer">
+          <h3>Africa</h3>
+          <p>Guess countries from Africa only.</p>
+        </a>
+        <a class="quiz-option-card" href="quiz-game.html?scope=asia" target="_blank" rel="noopener noreferrer">
+          <h3>Asia</h3>
+          <p>Guess countries from Asia only.</p>
+        </a>
+        <a class="quiz-option-card" href="quiz-game.html?scope=europe" target="_blank" rel="noopener noreferrer">
+          <h3>Europe</h3>
+          <p>Guess countries from Europe only.</p>
+        </a>
+        <a class="quiz-option-card" href="quiz-game.html?scope=north-america" target="_blank" rel="noopener noreferrer">
+          <h3>North America</h3>
+          <p>North America, Central America, and Caribbean.</p>
+        </a>
+        <a class="quiz-option-card" href="quiz-game.html?scope=south-america" target="_blank" rel="noopener noreferrer">
+          <h3>South America</h3>
+          <p>Guess countries from South America.</p>
+        </a>
+        <a class="quiz-option-card" href="quiz-game.html?scope=oceania" target="_blank" rel="noopener noreferrer">
+          <h3>Oceania</h3>
+          <p>Guess countries from Oceania and islands.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="map-game.js"></script>
+</body>
+</html>
