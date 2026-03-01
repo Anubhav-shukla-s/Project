@@ -205,6 +205,12 @@ button {
   font-size: clamp(1.3rem, 2.2vw, 1.8rem);
 }
 
+.game-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 #country-count {
   color: var(--mint);
   font-weight: 600;
@@ -380,7 +386,7 @@ button {
 
 .game-controls {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) auto auto;
+  grid-template-columns: minmax(220px, 1fr) auto auto auto;
   gap: 10px;
   margin-bottom: 14px;
 }
@@ -451,6 +457,45 @@ button {
 .map-country-sign.found-country-sign {
   stroke: rgba(248, 250, 252, 0.95);
   stroke-width: 0.9;
+}
+
+.map-country-label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 8px;
+  fill: #f8fafc;
+  paint-order: stroke;
+  stroke: rgba(15, 23, 42, 0.85);
+  stroke-width: 1.2px;
+  pointer-events: none;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.hidden-country-label {
+  opacity: 0;
+}
+
+.found-country-label {
+  opacity: 1;
+}
+
+.giveup-country-label {
+  opacity: 1;
+  fill: #fecaca;
+}
+
+.danger-btn {
+  padding: 11px 18px;
+  border-radius: 11px;
+  font-weight: 600;
+  color: #fee2e2;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(248, 113, 113, 0.45);
+}
+
+.danger-btn:hover {
+  background: rgba(239, 68, 68, 0.3);
+  transform: translateY(-2px);
 }
 
 .hidden {

@@ -25,7 +25,10 @@
     <section class="game-section" id="game-section">
       <div class="section-head">
         <h2 id="quiz-title">World Quiz</h2>
-        <p id="game-score">0 / 0 found</p>
+        <div class="game-meta">
+          <p id="game-score">0 / 0 found</p>
+          <p id="game-timer">15:00</p>
+        </div>
       </div>
       <p class="status-text" id="game-status">Loading world map and countries...</p>
 
@@ -37,6 +40,7 @@
           autocomplete="off"
         />
         <button class="primary-btn" id="guess-country-btn">Find Country</button>
+        <button class="danger-btn" id="give-up-btn">Give Up</button>
         <button class="ghost-btn" id="reset-game-btn">Reset Colors</button>
       </div>
 
